@@ -1,0 +1,35 @@
+.order {
+  margin: 0 auto;
+  width: auto;
+}
+
+.order__description {
+  padding: 21px 30px 10px;
+  box-sizing: border-box;
+  font-size: 13px;
+  line-height: 1.85;
+  text-align: left;
+  color: $grayish-brown;
+  margin: 0 auto;
+  margin-bottom: 13px;
+  width: 320px;
+}
+
+@media (min-width: $tablet-width) {
+  .order__description {
+    padding: 0 50px 9px;
+    font-size: 17px;
+    line-height: 1.76;
+    margin: 0 auto;
+    width: 768px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .order__description {
+    padding: 0 225px 8px;
+    margin: -6px auto 0;
+    width: 1150px;
+  }
+}

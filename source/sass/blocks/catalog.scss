@@ -1,0 +1,263 @@
+.catalog {
+  padding: 0 30px;
+  margin: 0 auto;
+  margin-top: 30px;
+  box-sizing: border-box;
+  width: 320px;
+  position: relative;
+}
+
+.catalog__list {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.catalog__item {
+  margin-top: 30px;
+}
+
+.catalog__item-image {
+  display: block;
+  background-color: $gray;
+  width: 260px;
+  height: 195px;
+}
+
+.catalog__item-about {
+  border-left: 1px solid $gray;
+  border-right: 1px solid $gray;
+  border-bottom: 1px solid $gray;
+
+  &:hover {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+  }
+}
+
+.catalog__item-description {
+  text-align: left;
+  padding: 0 27px;
+}
+
+.catalog__item-price {
+  display: flex;
+  justify-content: space-between;
+  padding: 22px 27px 28px;
+}
+
+.catalog__item-title {
+  font-size: 17px;
+  font-weight: bold;
+  padding: 26px 0 14px;
+  margin: 0;
+  line-height: 1.41;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &--toy-basket {
+    margin: 0 0 16px;
+  }
+}
+
+.catalog__item-parameter {
+  font-size: 13px;
+  color: $grayish-brown;
+  margin: 0;
+  padding-bottom: 27px;
+  border-bottom: 1px solid $gray;
+}
+
+.catalog__item-cost {
+  font-size: 15px;
+  font-weight: bold;
+  margin: auto 0;
+}
+
+.catalog__icon-cart {
+  opacity: 0.2;
+
+  &:hover {
+    fill: $seafoam-blue;
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .catalog {
+    margin-top: 78px;
+    padding: 0 50px;
+    box-sizing: border-box;
+    width: 768px;
+  }
+
+  .catalog__item {
+    display: flex;
+    justify-content: left;
+    margin-top: 54px;
+    border: none;
+    outline: 1px solid $gray;
+  }
+
+  .catalog__item-image {
+    display: block;
+    background-color: $gray;
+    width: 334px;
+    height: 334px;
+  }
+
+  .catalog__item-title {
+    font-size: 20px;
+    margin: 0;
+    margin-bottom: 12px;
+    line-height: 1.2;
+    padding-top: 0;
+
+    &--basket {
+      margin-bottom: 16px;
+    }
+  }
+
+  .catalog__item-parameter {
+    font-size: 15px;
+    border: 0;
+  }
+
+  .catalog__item-cost {
+    font-size: 17px;
+    margin: 0;
+  }
+
+  .catalog__item-description {
+    padding: 25px 0 0 27px;
+  }
+
+  .catalog__item-about {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: none;
+  }
+
+  .catalog__item-price {
+    padding: 0;
+    padding-top: 25px;
+    margin: 0 32px 27px 32px;
+    border-top: 1px solid $gray;
+    vertical-align: bottom;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .catalog {
+    margin-top: 128px;
+    width: 1150px;
+  }
+
+  .catalog__list {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .catalog__item {
+    min-height: 659px;
+    box-sizing: border-box;
+    outline: 1px solid $gray;
+    margin: 0;
+    flex-direction: column;
+    width: 316px;
+  }
+
+  .catalog__item-image {
+    display: block;
+    background-color: $gray;
+    width: 316px;
+    height: 462px;
+  }
+
+  .catalog__item-about {
+    box-sizing: border-box;
+    width: 316px;
+    outline: none;
+    margin: 0;
+    padding: 25px 28px 27px;
+
+    &--basket {
+      padding: 25px 26px 27px;
+    }
+
+    &--toy-basket {
+      padding: 25px 26px 27px;
+    }
+  }
+
+  .catalog__item-description {
+    box-sizing: inherit;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+  }
+
+  .catalog__item-price {
+    box-sizing: inherit;
+    display: flex;
+    justify-content: space-between;
+    padding: 23px 4px 0 0;
+    margin: 0;
+    border: none;
+
+    &--basket {
+      padding: 23px 7px 0 0;
+    }
+
+    &--toy-basket {
+      padding: 23px 7px 0 0;
+    }
+  }
+
+  .catalog__item-title {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0 0 13px;
+    margin: 0;
+    line-height: 1.2;
+  }
+
+  .catalog__item-parameter {
+    font-size: 15px;
+    color: $grayish-brown;
+    margin: 0;
+    padding: 0 0 43px;
+    border-bottom: 1px solid $gray;
+
+    &--toy-basket {
+      padding: 0 0 19px;
+    }
+  }
+
+  .catalog__item-cost {
+    font-size: 17px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+  }
+}

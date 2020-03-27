@@ -1,0 +1,61 @@
+.map {
+  position: relative;
+}
+
+.map__frame {
+  position: relative;
+  border: none;
+  z-index: 10;
+}
+
+
+.map__image {
+  display: block;
+  margin: -460px auto 0;
+  z-index: -10;
+}
+
+.map__marker {
+  position: absolute;
+  top: 148px;
+  right: 116px;
+  z-index: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .map__frame {
+    width: 768px;
+  }
+
+  .map__image {
+    display: block;
+    width: 768px;
+    margin: -459px auto 0;
+    z-index: -1;
+  }
+
+  .map__marker {
+    top: 140px;
+    right: 337px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map__frame {
+    width: 525px;
+  }
+
+  .map__image {
+    width: 525px;
+    margin: -461px auto 0;
+  }
+
+  .map {
+    width: 525px;
+  }
+
+  .map__marker {
+    top: 143px;
+    right: 220px;
+  }
+}

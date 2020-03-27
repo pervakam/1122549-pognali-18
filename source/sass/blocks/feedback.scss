@@ -1,0 +1,37 @@
+.feedback {
+  padding: 39px 30px;
+  box-sizing: border-box;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.feedback__button {
+  font-size: 18px;
+  padding: 14px 0;
+}
+
+@media (min-width: $tablet-width) {
+  .feedback {
+    box-sizing: border-box;
+    width: 768px;
+    padding: 55px 270px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback {
+    box-sizing: border-box;
+    width: 1150px;
+    padding: 0 695px 0 225px;
+    margin-top: -130px;
+    margin-right: auto;
+    margin-bottom: 105px;
+    margin-left: auto;
+  }
+
+  .feedback__button {
+    font-size: 17px;
+    padding: 15px 0;
+  }
+}

@@ -1,0 +1,50 @@
+body {
+  min-width: 320px;
+  background-color: $main-color;
+  margin: 0;
+  text-align: center;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  color: $black;
+
+  //background: url("../img/makets/mishka-form-mobile.jpg") no-repeat 50% 0;
+  //background: url("../img/makets/mishka-catalog-mobile.jpg") no-repeat 50% 0;
+  //background: url("../img/makets/IndexMobileMenu.png") no-repeat 50% 0;
+  //background: url("../img/makets/mishka-index-mobile.jpg") no-repeat 50% 0;
+}
+
+a {
+  text-decoration: none;
+  color: $black;
+}
+
+ul {
+  list-style: none;
+}
+
+/* временно для работы */
+//
+//html {
+//  opacity: 0.7;
+//}
+
+@media (min-width: $tablet-width) {
+  body {
+    //min-width: 768px;
+    //background: url("../img/makets/mishka-form-tablet.jpg") no-repeat 50% 0;
+    //background: url("../img/makets/mishka-catalog-tablet.jpg") no-repeat 50% 0;
+    //background: url("../img/makets/mishka-index-tablet.jpg") no-repeat 50% 0;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  body {
+    //min-width: 1150px;
+    //background: url("../img/makets/mishka-form-desktop.jpg") no-repeat 50% 0;
+    //background: url("../img/makets/mishka-catalog-desktop.jpg") no-repeat 50% 0;
+    //background: url("../img/makets/mishka-index-desktop.jpg") no-repeat 50% 0;
+  }
+}
+
+/* временно для работы */

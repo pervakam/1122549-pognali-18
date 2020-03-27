@@ -1,0 +1,134 @@
+.page-footer {
+  width: auto;
+  background-color: $gray-light;
+}
+
+.page-footer__wrapper {
+  margin: 0 auto;
+  box-sizing: border-box;
+  width: 320px;
+}
+
+.page-footer__logo {
+  display: none;
+}
+
+.page-footer__list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 25px 35px 25px 30px;
+  margin: 0;
+}
+
+.page-footer__item {
+  margin: auto 20px;
+}
+
+.page-footer__copyright {
+  box-sizing: border-box;
+  width: 260px;
+  padding: 22px 39px 22px 38px;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid $gray;
+  margin: 0 auto;
+}
+
+.page-footer__developed {
+  font-size: 19px;
+  font-weight: bold;
+  margin: 0;
+  margin-top: 3px;
+}
+
+.page-footer__logo-academy {
+  fill: #63d1bb;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__wrapper {
+    box-sizing: border-box;
+    width: 768px;
+    display: flex;
+    justify-content: space-between;
+    padding: 53px 50px 53px 40px;
+  }
+
+  .page-footer__logo {
+    display: block;
+    width: 120px;
+    height: 34px;
+    margin-right: 130px;
+
+    &:hover {
+      fill: #46c1ae;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  .page-footer__list {
+    padding: 7px 0 0;
+    margin-right: 62px;
+  }
+
+  .page-footer__item {
+    margin: auto 20px;
+  }
+
+  .page-footer__social-network {
+    &:hover {
+      fill: #46c1ae;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  .page-footer__copyright {
+    border: none;
+    padding: 0;
+    margin-top: 5px;
+    width: 182px;
+  }
+
+  .page-footer__developed {
+    cursor: pointer;
+    margin-right: 30px;
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  .page-footer__logo-academy {
+    &:hover {
+      fill: #46c1ae;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    box-sizing: border-box;
+    width: 1150px;
+    padding: 51px 52px 51px 40px;
+  }
+
+  .page-footer__copyright {
+    margin: 0;
+    margin-top: 7px;
+  }
+}

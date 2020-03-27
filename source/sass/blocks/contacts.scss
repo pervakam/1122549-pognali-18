@@ -1,0 +1,142 @@
+.contacts {
+  padding: 32px 29px 0;
+  text-align: left;
+  font-size: 15px;
+  line-height: 2;
+  color: $grayish-brown;
+}
+
+.contacts__title {
+  font-size: 18px;
+  font-weight: bold;
+  color: $black;
+  margin: 0;
+}
+
+.contacts__description {
+  margin: 0 0 31px;
+}
+
+.contacts__contact-type {
+  display: inline-block;
+  width: 48px;
+  margin-top: 23px;
+  margin-right: 26px;
+  margin-bottom: 7px;
+  vertical-align: top;
+}
+
+.contacts__contact-adress {
+  display: inline-block;
+  vertical-align: middle;
+  width: 180px;
+  margin: 0;
+  margin-top: 23px;
+  margin-bottom: 7px;
+
+  a:hover {
+    color: #46c1ae;
+  }
+
+  a:active {
+    opacity: 0.3;
+  }
+
+  &--border {
+    border-bottom: 1px solid $seafoam-blue;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    padding: 47px 0 21px 47px;
+    font-size: 17px;
+    line-height: 1.76;
+  }
+
+  .contacts__title {
+    font-size: 43px;
+    margin-left: -1px;
+    display: flex;
+    justify-content: space-between;
+
+    &::after {
+      display: block;
+      content: "";
+      background: url("../img/contacts/flag.svg") no-repeat;
+      height: 81px;
+      width: 47px;
+      margin-top: -1px;
+      margin-right: 53px;
+    }
+  }
+
+  .contacts__description {
+    margin-top: 8px;
+    line-height: 1.76;
+  }
+
+  .contacts__contact-type {
+    width: 55px;
+    margin-left: 3px;
+    margin-right: 18px;
+    vertical-align: top;
+  }
+
+  .contacts__contact-adress {
+    box-sizing: content-box;
+    width: auto;
+    vertical-align: top;
+    margin-right: 0;
+
+    &--border {
+      margin-right: 44px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    padding: 50px 10px 16px 172px;
+    font-size: 17px;
+    line-height: 1.76;
+    width: 310px;
+  }
+
+  .contacts__title {
+    font-size: 53px;
+    justify-content: left;
+
+    &::after {
+      display: none;
+    }
+
+    &::before {
+      display: block;
+      content: "";
+      background: url("../img/contacts/flag.svg") no-repeat;
+      height: 81px;
+      width: 47px;
+      margin-top: 10px;
+      margin-left: -109px;
+      margin-right: 59px;
+    }
+  }
+
+  .contacts__description {
+    margin-top: 31px;
+  }
+
+  .contacts__contact-type {
+    margin-top: 0;
+    margin-bottom: 30px;
+    margin-right: 18px;
+  }
+
+  .contacts__contact-adress {
+    line-height: 1.8;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+}
